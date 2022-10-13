@@ -1,0 +1,220 @@
+@import 'variables.css';
+@import 'proximanova.css';
+
+:root {
+  --cta-btn-height: 50px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--proxima-light);
+  user-select: none;
+  cursor: default;
+}
+
+:global html.nps {
+  height: 100vh;
+  overflow: hidden;
+}
+
+:global html.nps body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+}
+
+:global .dark {
+  background: #333;
+}
+:global .bold {
+  font-weight: bold;
+}
+:global .content-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+:global .content-header {
+  grid-row: 1/2;
+  color: #FFF;
+  text-align: center;
+}
+:global .content-title {
+  margin: 31px auto 25px;
+  text-align: center;
+  font-size: 28px;
+}
+:global .content-cta-btn-holder {
+  padding: 30px 0 40px;
+  margin: 0 auto;
+}
+:global .content-cta-btn {
+  display: inline-block;
+  width: 313px;
+  height: var(--cta-btn-height);
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: var(--cta-btn-height);
+  border-radius: calc(var(--cta-btn-height) / 2);
+  color: #FFF;
+  background-color: #0971B7;
+  text-decoration: none;
+  box-shadow: 0 0 0 10px rgba(9, 113, 183, 0.15);
+  &:hover {
+    opacity: 0.8;
+  }
+}
+:global .content-cta-icon-holder {
+  width: 68px;
+  padding: 20px 0 65px;
+  margin: 0 auto;
+}
+:global .content-cta-progress-holder {
+  width: 500px;
+  padding: 20px 0 65px;
+  margin: 0 auto;
+}
+:global .content-caption {
+  width: 400px;
+  min-height: 81px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.7em;
+}
+:global .content-status {
+  min-height: 115px;
+}
+:global .content-bg {
+  grid-row: 2/3;
+  background-color: #FFF;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  &.content-bg-no-left-corner {
+    border-top-left-radius: 0;
+  }
+}
+:global .content-bg-msg {
+  padding: 85px 95px 0;
+  margin: 0;
+  text-align: center;
+  color: #999;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+:global .button-blue-28 {
+  background-color: #0971B7;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #FFF;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+:global .message-result-icon {
+  display: inline-block;
+  width: 13px;
+  margin: 0 5px;
+  vertical-align: top;
+}
+:global .message-result-text {
+  color: #2297E6;
+  text-align: center;
+  font-size: 14px;
+  font-family: var(--proxima-regular);
+  vertical-align: top;
+}
+:global .event-screen-content-title {
+  margin: 41px 0 25px;
+  font-size: 26px;
+  line-height: 1.4em;
+  font-family: var(--proxima-regular);
+  color: var(--color-dark-text);
+}
+:global .event-screen-content-caption {
+  margin-bottom: 34px;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: var(--color-dark-text);
+}
+
+:global .feed-notification {
+  width: 500px;
+  margin: 20px auto 0;
+}
+
+:global .cta-button-icon-holder-green .arrow-right {
+  fill: var(--color-cta-green);
+}
+
+:global .cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 85px auto;
+  width: 352px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+  &:hover {
+    opacity: 0.7;
+  }
+  &.cta-button-action {
+    margin-bottom: 10px;
+    background-color: var(--color-cta-button-action);
+    color: #FFF;
+    border-color: var(--color-cta-button-action);
+    box-shadow: 0 6px 25px -10px #000;
+  }
+  &.cta-button-back-section {
+    color: var(--color-cta-button-action);
+  }
+  &.cta-button-back-main {
+    color: var(--color-cta-green);
+    font-size: 18px;
+  }
+  & .cta-button-icon-holder {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 18px;
+  }
+}
+
+:global .clean-storage-purple-span span {
+  color: #078E97;
+}
+
+/* Fade animation */
+:global .fade-enter {
+  opacity: 0.01;
+}
+
+:global .fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+:global .fade-leave {
+  opacity: 1;
+}
+:global .fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+:global .fade-appear {
+  opacity: 0.01;
+}
+
+:global .fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}

@@ -1,0 +1,32 @@
+:root {
+  --proxima-semibold: 'proxima_nova_ltsemibold', 'Segoe UI Semibold', 'Open Sans', Arial, sans-serif;
+  --proxima-light: 'proxima_nova_ltlight', 'Segoe UI', 'Open Sans', Arial, sans-serif;
+  --proxima-regular: 'proxima_nova_rgregular', 'Segoe UI', 'Open Sans', Arial, sans-serif;
+  --color-green-accent: #44AD52;
+  --color-dark-text: #394559;
+  --color-cta-green: #13AB45;
+  --color-cta-button-action: #224D75;
+  --color-cta-blue: #224D75;
+  --color-cta-blue-secondary: #1B3C5C;
+
+  /* Variables for NPS */
+  --color-cta-violet: #613EC8;
+  --nps-color-cta-blue: #0C71B7;
+  --nps-color-cta-green: #45AE65;
+  --header-height: 50px;
+  --color-title: #012238;
+
+  /* Variables for screen sizes */
+  --font-size-title: 72px;
+  --md-font-size-title: 52px;
+  --sm-font-size-title: 35px;
+  --button-width: 453px;
+  --md-button-width: 330px;
+  --sm-button-width: 230px;
+  --button-padding: 20px;
+  --md-button-padding: 9px 20px;
+  --sm-button-padding: 7px 20px;
+  --button-font-size: 28px;
+  --md-button-font-size: 20px;
+  --sm-button-font-size: 18px;
+}

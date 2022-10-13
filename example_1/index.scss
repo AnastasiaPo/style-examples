@@ -1,0 +1,50 @@
+@import "./resume.scss";
+@import "./tags.scss";
+
+.collapse-debug-pane {
+  .el-collapse-item {
+    .el-collapse-item__header {
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .el-collapse-item__content {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+.main-menu {
+  .input-item {
+    border-color: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 15px;
+      display: block;
+    }
+  }
+}
+
+.scroll-block {
+  height: 100vh;
+  overflow: scroll;
+  padding: 40px 50px;
+  box-sizing: border-box;
+}
+
+.left_scroll-block {
+  padding: 40px 50px;
+}
+
+.right_scroll-block {
+  position: sticky;
+  right: 0;
+  top: 0;
+  box-shadow: -12px 5px 12px -12px rgba(0, 0, 0, 0.05);
+  &::-webkit-scrollbar { width: 0; }
+}

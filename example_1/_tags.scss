@@ -1,0 +1,112 @@
+.resume-tag-tooltip {
+  max-width: 500px;
+
+  &.is-danger {
+    .resume-tag-tooltip__name {
+      color: #f56c6c;
+    }
+  }
+
+  &.is-warning {
+    .resume-tag-tooltip__name {
+      color: #e6a23c;
+    }
+  }
+
+  &.is-success {
+    .resume-tag-tooltip__name {
+      color: #67c23a;
+    }
+  }
+
+  .resume-tag-tooltip__name {
+    color: #409eff;
+    font-size: 16px;
+  }
+
+  .tag-hint {
+    .tag-hint__item {
+      margin-top: 10px;
+
+      .tag-hint-item__title,
+      .tag-hint__item-title
+      {
+        color: #c0c4cc;
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(187, 194, 203, 0.27);
+        border-top: 1px solid rgba(187, 194, 203, 0.27);
+        margin: 8px 0 8px -12px;
+        padding: 8px 4px 8px 20px;
+        background: rgba(187, 194, 203, 0.10);
+      }
+
+      .tooltip-hint-item__sentence,
+      .tag-hint__item-sentence {
+        font-size: 14px;
+        border-bottom: 1px solid rgba(187, 194, 203, 0.27);
+        margin: 0 -12px 8px -12px;
+        padding: 0 20px 8px 20px;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .tag-hint__tip,
+    .tag-hint__source,
+    {
+      font-size: 13px;
+      margin-bottom: 7px;
+      color: #c0c4cc;
+    }
+  }
+
+  .diff-exp-block {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(192, 196, 204, 0.36);
+      padding-bottom: 20px;
+    }
+
+    .diff-exp-block__company {
+      margin-bottom: 0px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #c0c4cc;
+      padding: 0;
+    }
+
+    .diff-exp-block__position {
+      padding: 0;
+      margin: 0;
+    }
+
+    .diff-exp-block__item {
+      &.is-diff {
+        color: #f56c6c;
+        text-align: center;
+        //padding: 8px 0;
+
+        span {
+          display: inline-block;
+
+          &:before,
+          &:after
+          {
+            content: '';
+            display: block;
+            border: 1.5px solid rgba(192, 196, 204, 0.25);
+            width: 0;
+            height: 20px;
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,807 @@
+.resume-content__left-col {
+  width: 100%;
+  line-height: 22px;
+
+  .resume-content__left-col_top-block {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+
+    .resume-content__left-col_top-block-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      .contact-foto {
+        display: inline-block;
+        width: 78px;
+        height: auto;
+      }
+    }
+
+    .resume-content__left-col_top-block-left {
+      width: calc(100% - 80px);
+      .resume-content__is-first-line {
+
+        .resume-position {
+          display: inline-block;
+          font-size: 24px;
+          font-weight: 300;
+          font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+          color: #2f394a;
+          margin: 0 10px 0 0;
+          line-height: normal;
+
+          .resume-parse-from {
+            color: #c0c4cc;
+          }
+        }
+
+        .salary-block {
+          display: inline;
+          position: relative;
+          white-space: nowrap;
+
+          .salary-block-item {
+            display: inline;
+            line-height: 32px;
+            font-size: 24px;
+            font-weight: 300;
+            font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+
+            .wants-sum {
+              display: inline;
+              color: #67c23a;
+              margin: 0;
+            }
+
+            .middle-sum-company {
+              display: inline;
+              color: #909399;
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .resume-header {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+        color: #2f394a;
+        line-height: 35px;
+        margin: 0;
+        display: inline-block;
+
+        .age {
+          color: #c0c4cc;
+        }
+      }
+
+      .line-info {
+        font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+        font-size: 20px;
+        line-height: 35px;
+        color: #c0c4cc;
+        margin-bottom: 10px;
+
+        img {
+          vertical-align: middle;
+          margin: -2px 10px 0 0;
+        }
+
+        p {
+          margin: 0;
+          display: inline;
+        }
+        .resume-update {
+          margin: 0;
+        }
+
+        .region,
+        .update{
+          border-radius: 3px;
+          border: dotted 1px #f56c6c;
+          background-color: rgba(245, 108, 108, 0.05);
+        }
+      }
+    }
+
+    @media screen and (min-width: 1900px) {
+      .resume-content__left-col_top-block-left {
+
+        .contact-foto {
+          width: 100%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1280px) {
+
+      .resume-content__left-col_top-block-right {
+        .resume-header {
+          font-size: 28px;
+        }
+
+        .resume-position,
+        .salary-block-item,
+        .wants-sum {
+          font-size: 24px;
+        }
+      }
+
+    }
+
+    @media screen and (max-width: 850px) {
+
+      .resume-content__left-col_top-block-right {
+        .resume-header {
+          font-size: 20px;
+        }
+
+        .resume-position,
+        .salary-block-item,
+        .wants-sum {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .resume-content__left-col_bottom-block {
+    width: 100%;
+
+    .resume-section {
+
+      .resume-section__title {
+        font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+        font-size: 20px;
+        color: #c0c4cc;
+        margin: 15px 0 12px;
+        font-weight: 300;
+      }
+
+      .el-collapse-item__arrow {
+        margin-left: 15px;
+        color: #dcdfe6;
+        font-weight: 600;
+      }
+
+      &:last-child {
+        padding: 10px 0 50px;
+      }
+
+      .resume-section__content {
+        font-size: 18px;
+        color: #2f394a;
+        font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+        font-weight: 300;
+        line-height: 24px;
+
+        .resume-section__content-row {
+          margin: 0;
+          padding: 0;
+        }
+
+        .text-highlight {
+          background-color: rgba(64, 158, 255, 0.23);
+
+          &.text-highlight--negative {
+            background-color: rgba(245, 108, 108, 0.23);
+          }
+
+          &.text-highlight--positive {
+            background-color: rgba(103, 194, 58, 0.23);
+          }
+
+          .text-highlight--middle {
+            background-color: rgba(230, 162, 60, 0.23);
+          }
+        }
+      }
+    }
+    .resume-section-about-me-wrap {
+      padding: 0;
+      margin-bottom: 30px;
+
+      .resume-section-about-me  {
+        margin-left: -24px;
+        padding: 0 18px;
+        border-left: solid 6px rgba(64, 158, 255, 0.17);
+
+        a {
+          text-decoration: none;
+          color: #409eff;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    .resume-section-experience-wrap {
+      padding: 15px 0 20px 0;
+
+      .resume-section-experience {
+
+        .experience-list {
+          list-style: none;
+          margin: 0;
+          width: 100%;
+          padding: 0;
+
+          .experience-item {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 25px 0;
+            border-bottom: 1px solid #f1f1f1;
+
+            &:first-child {
+              padding-top: 0;
+            }
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            .experience-content {
+              width: 100%;
+
+              .experience-dates {
+                font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+                font-size: 18px;
+                line-height: 28px;
+                color: #909399;;
+              }
+
+              .experience-position {
+                display: inline;
+                line-height: 28px;
+                font-size: 18px;
+                font-family: "San Francisco Medium", "Segoe UI", "Helvetica", "Arial", sans-serif;
+                color: #303133;
+              }
+
+              .experience-company {
+                display: inline;
+                color: #909399;
+                padding-bottom: 4px;
+              }
+
+              .experience-description {
+                font-size: 18px;
+                margin-top: 4px;
+                line-height: 24px;
+                color: #2f394a;
+                font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+                font-weight: 300;
+
+                a  {
+                  text-decoration: none;
+                  font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+                  color: #409eff;
+                  cursor: pointer;
+
+                  &:hover {
+                    opacity: 0.7;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .el-collapse-item__header {
+          display: inline-block;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    .resume-section-contacts-wrap {
+        .resume-section-contacts {
+
+          .resume-contacts {
+            font-size: 16px;
+            color: #000;
+
+            .contact-item {
+              line-height: 22px;
+              display: inline;
+            }
+
+            img {
+              margin-right: 10px;
+            }
+          }
+
+          .line-link {
+            .line-contacts__link {
+              text-decoration: none;
+              cursor: pointer;
+
+              .line-contacts__link_icon  {
+                margin: 0 9px 0 0;
+                vertical-align: middle;
+                margin-top: 18px;
+              }
+
+              .hh-icon {
+                width: 37px;
+              }
+
+              .whats-app-icon {
+                width: 44px;
+              }
+
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+          .el-collapse-item__header {
+            display: inline-block;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+    }
+
+    .keywords-container {
+
+      .keywords-container_tags {
+        margin: 0 5px 5px 0;
+        padding: 0 18px;
+        height: 24px;
+        font-size: 14px;
+        line-height: 22px;
+        color: #6aacf8;
+        cursor: default;
+      }
+    }
+  }
+  .el-collapse,
+  .el-collapse-item__wrap,
+  .el-collapse-item__header {
+    border: none;
+  }
+}
+
+.resume-content__right-col  {
+  height: 100%;
+
+  .resume-tag-tooltip-wrapper {
+    right: 40%;
+  }
+
+  .vacancy-row {
+    width: 50%;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: default;
+
+    .vacancy-list {
+       vertical-align: middle;
+
+       .el-input__suffix {
+         cursor: pointer;
+
+         &:hover {
+           opacity: 0.7;
+
+           + .el-input__inner {
+             opacity: 0.7;
+           }
+         }
+       }
+
+       .el-input__inner {
+         border: none;
+         padding: 0;
+         text-transform: capitalize;
+         font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+         font-weight: 300;
+         font-size: 24px;
+         color: #303133;
+         cursor: pointer;
+
+         &:hover {
+           opacity: 0.7;
+         }
+       }
+    }
+
+    .resume-quantity-block {
+      width: 50%;
+      display: inline-block;
+      text-align: right;
+
+      .resume-quantity {
+        display: inline;
+        margin: 0;
+        clear: both;
+        font-size: 18px;
+        font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+        font-weight: 300;
+        color: #c0c4cc;
+        vertical-align: middle;
+      }
+    }
+
+    &.senior{
+
+      &:after {
+        content: 'Senior';
+        color: #67c23a;
+        font-size: 16px;
+        position: absolute;
+        display: inline-block;
+        width: fit-content;
+      }
+    }
+
+    &.middle{
+
+      &:after {
+        content: 'Middle';
+        color: #409eff;
+        font-size: 16px;
+        position: absolute;
+        display: inline-block;
+        width: fit-content;
+      }
+    }
+
+    &.junior{
+
+      &:after {
+        content: 'Junior';
+        color: #f56c6c;
+        font-size: 16px;
+        position: absolute;
+        display: inline-block;
+        width: fit-content;
+      }
+    }
+  }
+
+  .scoring-row {
+    margin: 0 0 35px;
+
+    .scoring-resuls-block {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      font-size: 36px;
+      font-weight: 300;
+
+      &.is-positive {
+        color: #67c23a;
+      }
+
+      &.is-negative {
+        color: #f56c6c;
+      }
+
+      &.is-middle {
+        color: #e6a23c;
+      }
+
+      .scoring-resuls-percent {
+        position: absolute;
+        right: 0;
+      }
+
+      .scoring-resuls-clear {
+        color: #c0c4cc !important;
+        padding-left: 5px;
+      }
+    }
+
+    .score-info-icon-resume {
+      vertical-align: middle;
+      font-size: 33px;
+      color: #303133;
+      margin-left: 5px;
+    }
+  }
+
+  .info-all-block {
+    margin-top: 20px;
+
+    .other-resume-link {
+      display: inline-block;
+      font-size: 16px;
+      color: #409eff;
+      text-decoration: none;
+      line-height: normal;
+      margin-bottom: 8px;
+      word-wrap: anywhere;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .comment-block {
+      position: relative;
+
+      .comments-count {
+        color: #c0c4cc;
+      }
+
+      .comment-block__form {
+        position: relative;
+
+        .comment-block__form_text {
+          margin-bottom: 30px;
+        }
+
+        .comment-block__form_send-btn {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          padding: 4px 8px;
+          font-size: 12px;
+        }
+      }
+
+      .comment-block__save-comment {
+        margin-bottom: 20px;
+
+        .comment-block__save-comment_date {
+          margin-bottom: 5px;
+          font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+          font-size: 12px;
+          color: #c0c4cc;
+        }
+
+        .comment-block__save-comment_text {
+          margin: 0;
+          font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+          font-size: 16px;
+          color: #000000;
+        }
+      }
+    }
+
+    .skills-block__input {
+      display: block;
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-right: 30px;
+      }
+
+      .el-checkbox__input {
+        margin-top: 8px;
+      }
+
+      .el-checkbox__input.is-checked .el-checkbox__inner {
+        background-color: #c0c4cc;
+        border-color: #c0c4cc;
+      }
+
+      .el-checkbox__input.is-focus .el-checkbox__inner,
+      .el-checkbox__inner:hover {
+        border-color: #c0c4cc;
+      }
+
+      .skill-row {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #67c23a;
+        border-radius: 5px;
+      }
+
+      .skill-title,
+      .skill-val {
+        font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #303133;
+      }
+
+      .skill-val {
+        margin-left: 5px;
+      }
+
+      .el-checkbox__label {
+        width: 100%;
+        position: relative;
+      }
+    }
+
+    .el-collapse-item__header {
+      font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+      font-size: 18px;
+      color: #000000;
+      cursor: pointer;
+      padding: 0 10px;
+      margin-left: -10px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      line-height: normal;
+
+      &:hover {
+        background-color: #f6f6f6;
+      }
+
+      .el-collapse-item__arrow {
+        margin: 0 0px 0 auto;
+        color: #dcdfe6;
+        font-weight: 600;
+      }
+    }
+
+    .colleagues-row  {
+
+      .colleagues-row-company {
+        margin-bottom: 5px;
+        line-height: 24px;
+        font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+        font-size: 14px;
+        color: #c0c4cc;
+      }
+
+      .colleagues-row-people {
+        display: block;
+        text-decoration: none;
+        font-family: "San Francisco", "Segoe UI", "Helvetica", "Arial", sans-serif;
+        font-size:  16px;
+        line-height: 32px;
+
+        span {
+          margin-right: 5px;
+        }
+
+        .name {
+          color: #303133;
+        }
+        .scoring-clear,
+        .vacancy {
+          color: #c0c4cc;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .score-default {
+    color: #409eff;
+  }
+
+  .score-positive {
+    color: #67c23a;
+  }
+
+  .score-negative {
+    color: #f56c6c;
+  }
+
+  .score-middle {
+    color: #e6a23c;
+  }
+
+  .el-collapse,
+  .el-collapse-item__wrap,
+  .el-collapse-item__header {
+    border: none;
+  }
+
+  .el-collapse-item__wrap {
+    padding-right: 5px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .vacancy-row {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .vacancy-row {
+      width: 90%;
+    }
+
+    .scoring-row {
+      .scoring-resuls-block {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.resume-header__tooltip {
+
+  .popper__arrow {
+    display: none;
+  }
+}
+
+.experience-content__tooltip {
+  min-width: 200px;
+  padding: 10px 21px;
+
+  .experience-content__tooltip-wrapper  {
+
+    .experience-content__tooltip-wrapper_tooltip-position,
+    .experience-content__tooltip-wrapper_tooltip-company {
+      font-size: 16px;
+      line-height: 12px;
+      padding-bottom: 0;
+    }
+    .experience-content__tooltip-wrapper_tooltip-company {
+      color: #e3cfb1;
+    }
+  }
+  .popper__arrow {
+    display: none;
+  }
+}
+
+.text__highlight {
+  background: yellow !important;
+}
+
+.vacancy-list-item_wrap {
+
+  &.selected {
+    font-weight: 300;
+  }
+
+  .vacancy-list-item {
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: default;
+
+    &.scoring-sum {
+      float: right;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .resume-content__left-col {
+    .hr-logo {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .resume-content__left-col {
+    .hr-logo {
+      width: 60px;
+    }
+  }
+}
+
+.el-select-dropdown__wrap {
+  max-height: 350px !important;
+}
+
+//можно удалить?
+
+.tokens-container {
+  .el-tag {
+    color: inherit;
+    background: none;
+    border: 0;
+    font-size: 16px;
+    padding: 0 4px;
+    border-radius: 0;
+
+    &.selected {
+      background: #f8ff00;
+    }
+  }
+}
